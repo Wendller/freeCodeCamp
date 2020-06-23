@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>FreeCodeForm</title>
+</head>
+<body>
+  <main>
+    <header>
+      <h1 id="title">Free Code Form</h1>
+      <p id="description">Please fill the form and help us to improve</p>
+    </header>
+
+    <form id="survey-form" action="">
+      <div class="item">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="item">
+        <label id="email-label" for="email">E-mail</label>
+        <input type="email" name="mail" id="email" placeholder="Enter your E-mail" required>
+      </div>
+
+      <div class="item">
+        <label id="number-label" for="number">Age</label>
+        <input type="number" name="age" id="number" placeholder="Enter your age" min="18" max="100" required>
+      </div>
+
+      <div class="item">
+        <label for="dropdown">Select the area that you intend to work to:</label>
+        <select name="areas" id="dropdown">
+          <option value="web">Web Development</option>
+          <option value="mobile">Mobile</option>
+          <option value="desktop">Desktop App</option>
+        </select>
+      </div>
+
+      <div class="item">
+        <p class="title">Which would you like to study more?</p>
+          <label for="html">
+            <input type="radio" name="tech" id="html"> HTML
+          </label>
+          <label for="css">
+            <input type="radio" name="tech" id="css"> CSS
+          </label>
+          <label for="javascript">
+            <input type="radio" name="tech" id="javascript"> JavaScript
+          </label>
+      </div>
+
+      <div class="item">
+        <p class="title">What do you want to learn later?</p>
+        <label for="js">
+          <input type="checkbox" name="check" id="js"> JavaScript
+        </label>
+        <label for="py">
+          <input type="checkbox" name="check" id="py"> Python
+        </label>
+        <label for="jv">
+          <input type="checkbox" name="check" id="jv"> Java
+        </label>
+        <label for="php">
+          <input type="checkbox" name="check" id="php"> PHP
+        </label>
+      </div>
+
+      <div class="item">
+        <p class="title">Comments</p>
+        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Add here your comments"></textarea>
+      </div>
+
+      <button id="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
