@@ -6,8 +6,13 @@
 //? + => 1 or n 
 //? ? => 0 or 1
 //? {min, max} => minimum and maximum
+//? m - multiline
+//? ^ => begins with
+//? $ => end with
+//? [^] => denied
+//? $1 $2 $3 => retrovisors
 
-const { text, html } = require("./text");
+const { text, html, alfabeto } = require("./text");
 
 const reg_epx = /\Lorem/gi;
 
