@@ -10,4 +10,4 @@ function chunkArrayInGroups(arr, size) {
   return newArray;
 }
 
-chunkArrayInGroups(["a", "b", "c", "d"], 2);
+console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2));
